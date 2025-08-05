@@ -33,5 +33,40 @@ for Tc in range(1,11):
     print(f'#{Tc} {result}')
 
 
+# for Tc in range(1,11):
+#     dump = int(input())
+#     blocks = list(map(int, input().split()))
+ 
+#     height = [0] * 101
+ 
+#     for b in blocks:
+#         height[b] += 1
+ 
+#     min_h = 0
+#     max_h = 100
+ 
+#     while dump > 0:
+#         while height[max_h] == 0:
+#             max_h -= 1
+ 
+#         while height[min_h] == 0:
+#             min_h += 1
+ 
+#         if max_h - min_h <= 1:
+#             break
+ 
+#         height[max_h] -= 1
+#         height[max_h-1] += 1
+#         height[min_h] -= 1
+#         height[min_h+1] += 1
+ 
+#         dump -= 1
+ 
+#     while height[max_h] == 0:
+#         max_h -= 1
+#     while height[min_h] == 0:
+#         min_h += 1
+ 
+#     print(f'#{Tc} {max_h-min_h}')
 
 
