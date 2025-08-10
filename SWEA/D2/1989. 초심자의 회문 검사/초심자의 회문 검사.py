@@ -1,15 +1,10 @@
 T = int(input())
 
 for Tc in range(T):
-    ch = input()
-    result = 1
-    for i in range(len(ch)):
-
-        if ch[i] == ch[len(ch)-i-1]:
-            continue
-        else:
-            result = 0
+    char = input().strip() # strip을 활용하여 공백제거
+    flag = 1
+    for i in range((len(char))//2):
+        if char[i]  != char[len(char)-i-1]:
+            flag = 0
             break
-    print(f'#{Tc+1} {result}')
-
-
+    print(f'#{Tc+1} {flag}')
