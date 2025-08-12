@@ -1,10 +1,10 @@
 import sys
-input = sys.stdin.readline
+input = sys.stdin.readline # 성능을 올리기 위해 개선
 
 # N은 명령의 수
 N = int(input())
 stack = []
-top = -1
+
 for _ in range(N):
     command = input().split()
     if command[0] == 'push':
@@ -30,4 +30,5 @@ for _ in range(N):
             top -=1
         else:
             print(-1)
+
         
